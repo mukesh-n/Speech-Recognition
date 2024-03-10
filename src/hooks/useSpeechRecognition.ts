@@ -5,7 +5,7 @@ if("webkitSpeechRecognition" in window){
     recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
     // recognition.lang = "en-US"
-    // recognition.lang = "ta-IN"; // for Tamil in India
+    // recognition.lang = "ta-IN"; // for Tamil in Indi
 
 }
 

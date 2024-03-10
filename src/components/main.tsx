@@ -2,7 +2,7 @@ import useSpeechRecognition from '../hooks/useSpeechRecognition'
 
 const Main = () => {
   const {
-text,
+text ,
     startListening,
 stopListerning,
 islisterning,
@@ -19,7 +19,7 @@ hasRecognitionSupport
            <div className='row w-100 g-0 h-100 d-flex align-items-center justify-content-center '>
             <div className = "col-7 d-flex flex-column align-items-center p-3 rounded shadow border" style={{ height: "70vh", backgroundColor: "#747495" }}
 >
-           <div className="row w-100 g-0">
+           <div className="row w-100   g-0">
             <div className='col pe-2'>
             <button className='btn w-100 btn-sm btn-dark mb-3' onClick={() => startListeningWithParams('ta-IN')}   >
               Speech Recognition(Tamil)
@@ -33,10 +33,9 @@ hasRecognitionSupport
 
             </div>
 
-            <div className='text-muted h5'>
+            <div className=' text-muted   px-3 py-3 mt-5 h5'>
             {islisterning && <p>Listening...</p>}
-
-            {text}
+            {text && <div className="bg-white shadow-sm rounded px-3 py-2">{text}</div>}
                 </div>
 
             </div>
