@@ -21,12 +21,12 @@ hasRecognitionSupport
 >
            <div className="row w-100   g-0">
             <div className='col pe-2'>
-            <button className='btn w-100 btn-sm btn-dark mb-3' onClick={() => startListeningWithParams('ta-IN')}   >
+            <button className='btn w-100 btn-sm btn-dark mb-3' onClick={() => {!islisterning && startListeningWithParams('ta-IN')}}   >
               Speech Recognition(Tamil)
             </button>
             </div>
             <div className='col ps-2'>
-            <button className='btn w-100 btn-sm btn-dark mb-3' onClick={() => startListeningWithParams('en-US')}   >
+            <button className='btn w-100 btn-sm btn-dark mb-3' onClick={() => {!islisterning &&  startListeningWithParams('en-US')}}   >
             Speech Recognition(English)
             </button>
             </div>
